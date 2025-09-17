@@ -15,6 +15,8 @@ public class Main {
         so.executarPrograma(p2);
         so.executarPrograma(p3);
 
+        System.out.println("\nPrograma encerrado!");
+
     }
 
 }
