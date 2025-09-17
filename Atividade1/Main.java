@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args)
     {
-        Computador computador = new Computador(4096, 256, 4, 15.0);
+        Computador pc = new Computador(4096, 256, 4, 15.0);
 
-        Programa p1 = new Programa(2048, 512, 50000);
+        Programa p1 = new Programa(2048, 512, 5000);
 
         Programa p2 = new Programa(4096*2, 128, 50000);
 

@@ -6,7 +6,7 @@ public class SecretariaFazenda
         {
             Municipio Brasilia = new Municipio("Brasilia", "DF", 65.5);
 
-            Apartamento apt = new Apartamento("Brasilia", 52.0, 1, true)
+            Apartamento apt = new Apartamento("Brasilia", 52.0, 1, true);
 
             System.out.println("IPTU: R$: " + apt.calcular_IPTU());
 

@@ -2,14 +2,14 @@ public class Programa
 {
     private Integer memoriaRAMAlocada;
     private Integer SSDOcupado;
-    private Integer nucleos;
+    //private Integer nucleos;
     private Integer quantidadeOperacoes;
 
-    public Programa(Integer memoriaRAMAlocada, Integer SSDOcupado, Integer nucleos, Integer quantidadeOperacoes)
+    public Programa(Integer memoriaRAMAlocada, Integer SSDOcupado, Integer quantidadeOperacoes)
     {
         this.memoriaRAMAlocada = memoriaRAMAlocada;
         this.SSDOcupado = SSDOcupado;
-        this.nucleos = nucleos;
+        //this.nucleos = nucleos;
         this.quantidadeOperacoes = quantidadeOperacoes;
     }
 
@@ -33,7 +33,7 @@ public class Programa
         this.SSDOcupado = SSDOcupado;
     }
 
-    public Integer getNucleos()
+    /*public Integer getNucleos()
     {
         return this.nucleos;
     }
@@ -41,7 +41,7 @@ public class Programa
     public void setNucleos(Integer nucleos)
     {
         this.nucleos = nucleos;
-    }
+    }*/
 
     public Integer getQuantidadeOperacoes()
     {
