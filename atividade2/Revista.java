@@ -1,21 +1,22 @@
 public class Revista extends Material 
 {
 
-    private String edicao;
+    private Integer edicao;
 
-    public void setEdicao(String edicao)
+    public void setEdicao(Integer edicao)
     {
         this.edicao = edicao;
     }
 
-    public String getEdicao()
+    public Integer getEdicao()
     {
         return this.edicao;
     }
 
-    public Revista(String titulo, int anoPublicado, int edicao)
+    public Revista(String titulo, int anoPublicado, Integer edicao)
     {
         super(titulo, anoPublicado);
+        this.edicao = edicao;
     }
 
     @Override

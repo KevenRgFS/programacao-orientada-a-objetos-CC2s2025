@@ -13,7 +13,7 @@ public class Funcionario extends Pessoa {
 
     public Funcionario(String nome, String email, String cargo) {
         super(nome, email);
-        
+        this.cargo = cargo;
     }
 
     @Override

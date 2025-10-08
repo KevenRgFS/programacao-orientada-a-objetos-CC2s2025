@@ -10,9 +10,10 @@ public class Usuario extends Pessoa {
         this.matricula = matricula;
     }
 
-    public Usuario(String nome, String email, int matricula) {
+    public Usuario(String nome, String email, Integer matricula) {
         super(nome, email);
-        
+        this.matricula = matricula;
+    
     }
 
     @Override

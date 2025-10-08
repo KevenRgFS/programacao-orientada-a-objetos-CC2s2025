@@ -50,9 +50,9 @@ public class Emprestimo {
         System.out.println("Dia de Empréstimo: " + getDataEmprestimo());
         System.out.println("Limite para Devolução: " + getDataDevolucao());
         System.out.println("Requerente: ");
-        pessoa.exibirInfo();
+        this.pessoa.exibirInfo();
         System.out.println("Objeto de Emprestimo: ");
-        material.descricao();
+        this.material.descricao();
     }
 
 }

@@ -16,6 +16,7 @@ public class Livro extends Material
     public Livro(String titulo, int anoPublicado, String autor)
     {
         super(titulo, anoPublicado);
+        this.autor = autor;
     }
 
     @Override
