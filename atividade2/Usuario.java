@@ -2,6 +2,26 @@ public class Usuario extends Pessoa {
 
     private Integer matricula;
 
+    public Usuario(String nome, String email, Integer matricula) throws Exception {
+        super(nome, email);
+        this.matricula = matricula;
+    
+        if(nome == null || nome.length() < 1)
+        {
+            throw new NomeInvalidoException();
+        }
+
+        if(email == null || email.length() < 3)
+        {
+            throw new EmailInvalidoException();
+        }
+        if(matricula == null || String.valueOf(matricula).length() < 2)
+        {
+            Exception e = new Exception("Matrícula Inválido!");
+            throw e;
+        }
+    }
+
     public Integer getMatricula() {
         return this.matricula;
     }
@@ -10,11 +30,6 @@ public class Usuario extends Pessoa {
         this.matricula = matricula;
     }
 
-    public Usuario(String nome, String email, Integer matricula) {
-        super(nome, email);
-        this.matricula = matricula;
-    
-    }
 
     @Override
     public void exibirInfo() {
