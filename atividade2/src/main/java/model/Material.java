@@ -1,3 +1,4 @@
+package model;
 public abstract class Material {
 
     private String titulo;
